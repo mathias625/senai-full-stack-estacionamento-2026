@@ -70,8 +70,6 @@ O ESTACIONAMENTO ACME tem atuado em nossa cidade com ótimo atendimento e segura
 - MySQL
 - Prisma ORM
 
-
-
 ## Exemplo da Interface
 
-![Tela do Sistema](./tela.png)
+![Tela do Sistema](./img/tela.png)
