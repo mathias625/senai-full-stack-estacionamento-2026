@@ -1,0 +1,187 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-05-08T11:01:49.302Z",
+  "__export_source": "backend-aula",
+  "resources": [
+    {
+      "_id": "wrk_backend",
+      "_type": "workspace",
+      "name": "Backend Aula"
+    },
+    {
+      "_id": "fld_api",
+      "_type": "request_group",
+      "parentId": "wrk_backend",
+      "name": "api"
+    },
+    {
+      "_id": "fld_Carro",
+      "_type": "request_group",
+      "parentId": "fld_api",
+      "name": "Carro"
+    },
+    {
+      "_id": "req_Carro_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Carro",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/carro/listar"
+    },
+    {
+      "_id": "req_Carro_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Carro",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/carro/buscar/:id"
+    },
+    {
+      "_id": "req_Carro_POST",
+      "_type": "request",
+      "parentId": "fld_Carro",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/carro/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"placa\": \"string\",\n  \"proprietario\": \"string\",\n  \"tipo\": \"string\",\n  \"modelo\": \"string\",\n  \"marca\": \"string\",\n  \"cor\": \"string\",\n  \"ano\": 0,\n  \"telefone\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Carro_PUT",
+      "_type": "request",
+      "parentId": "fld_Carro",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/carro/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"placa\": \"string\",\n  \"proprietario\": \"string\",\n  \"tipo\": \"string\",\n  \"modelo\": \"string\",\n  \"marca\": \"string\",\n  \"cor\": \"string\",\n  \"ano\": 0,\n  \"telefone\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Carro_DELETE",
+      "_type": "request",
+      "parentId": "fld_Carro",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/carro/excluir/:id"
+    },
+    {
+      "_id": "fld_Alojamento",
+      "_type": "request_group",
+      "parentId": "fld_api",
+      "name": "Alojamento"
+    },
+    {
+      "_id": "req_Alojamento_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Alojamento",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/alojamento/listar"
+    },
+    {
+      "_id": "req_Alojamento_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Alojamento",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/alojamento/buscar/:id"
+    },
+    {
+      "_id": "req_Alojamento_POST",
+      "_type": "request",
+      "parentId": "fld_Alojamento",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/alojamento/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"placa\": \"string\",\n  \"entrada\": \"2026-05-08T11:01:49.301Z\",\n  \"saida\": \"2026-05-08T11:01:49.302Z\",\n  \"valorHora\": 0,\n  \"valorTotal\": 0\n}"
+      }
+    },
+    {
+      "_id": "req_Alojamento_PUT",
+      "_type": "request",
+      "parentId": "fld_Alojamento",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/alojamento/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"placa\": \"string\",\n  \"entrada\": \"2026-05-08T11:01:49.301Z\",\n  \"saida\": \"2026-05-08T11:01:49.302Z\",\n  \"valorHora\": 0,\n  \"valorTotal\": 0\n}"
+      }
+    },
+    {
+      "_id": "req_Alojamento_DELETE",
+      "_type": "request",
+      "parentId": "fld_Alojamento",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/alojamento/excluir/:id"
+    }
+  ]
+}

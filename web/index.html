@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estacionamento ACME</title>
+    <title>Sistema de Estacionamento</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <button onclick="carregarDados()">Atualizar</button>
+        <button onclick="abrirCadastroAuto()">Novo Veículo</button>
+        <button onclick="abrirCadastroAlojamento()">Nova Alojamento</button>
+    </header>
+    <main>
+        <h1 class="titulo">Veículos</h1>
+        <div id="automoveis-container" class="container"></div>
+        <hr>
+        <h1 class="titulo">Alojamentos</h1>
+        <div id="alojamentos-container" class="container"></div>
+    </main>
+    <div id="modalAuto" class="modal" style="display:none;">
+        <div class="modal-content">
+            <h2>Cadastro de Veículo</h2>
+            <form onsubmit="cadastrarCarro(event)">
+                <input type="text" id="placa" placeholder="Placa" required>
+                <input type="text" id="proprietario" placeholder="Proprietário " required>
+                <input type="text" id="tipo" placeholder="Tipo" required>
+                <input type="text" id="modelo" placeholder="Modelo" required>
+                <input type="text" id="marca" placeholder="Marca" required>
+                <input type="text" id="cor" placeholder="Cor" required>
+                <input type="number" id="ano" placeholder="Ano" required>
+                <input type="text" id="telefone" placeholder="Telefone" required>
+                <div class="botoes">
+                    <button type="submit" style="background: #28a745;">Salvar Veículo</button>
+                    <button type="button" onclick="fecharModais()" class="btn-cancelar">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="modalAlojamento" class="modal" style="display:none;">
+        <div class="modal-content">
+            <h2>Registrar Entrada</h2>
+            <form onsubmit="cadastrarAlojamento(event)">
+                <input type="text" id="alojamento-placa" placeholder="Placa do Carro" required>
+                <input type="number" id="valorHora" placeholder="Valor Hora (R$)" required>
+                <div class="botoes">
+                    <button type="submit" style="background: #28a745;">Iniciar Alojamento</button>
+                    <button type="button" onclick="fecharModais()" class="btn-cancelar">Voltar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
