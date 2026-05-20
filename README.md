@@ -52,7 +52,6 @@ npm install
 3. Prepare o banco de dados (Prisma):
    ```bash
    npx prisma generate
-   npx prisma migrate dev --name init
 
 ```
 
