@@ -74,6 +74,3 @@ O ESTACIONAMENTO ACME tem atuado em nossa cidade com ótimo atendimento e segura
 
 ![Tela do Sistema](./img/tela.png)
 
-## Imagem do Documento
-
-![Tela do documento ](./docs/uml.png)
