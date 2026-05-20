@@ -10,10 +10,10 @@ const {
     excluir 
 } = require("../controller/carro.controller");
 
-router.post("/cadastrar", cadastrar); //TESTADO
-router.get("/listar", listar); //TESTADO
-router.get("/buscar/:placa", buscar); //TESTADO
-router.put("/atualizar/:placa", atualizar); //TESTADO
-router.delete("/excluir/:placa", excluir); //TESTADO
+router.post("/cadastrar", cadastrar); 
+router.get("/listar", listar); 
+router.get("/buscar/:placa", buscar); 
+router.put("/atualizar/:placa", atualizar); 
+router.delete("/excluir/:placa", excluir); 
 
 module.exports = router;
