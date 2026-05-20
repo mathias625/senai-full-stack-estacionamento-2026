@@ -45,3 +45,33 @@ O ESTACIONAMENTO ACME tem atuado em nossa cidade com ótimo atendimento e segura
 
 ## Passo a Passo de como executar e testar
 
+   -Clone o repositório
+   -cd api
+   -npm install
+
+## Tecnologias
+- Git
+- GitHub
+- VSCode
+- Insomnia
+- Nodemon
+- dotenv
+- cors
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+
+### Backend
+- Node.js
+- Express.js
+
+### Banco de Dados
+- MySQL
+- Prisma ORM
+
+
+
+## Exemplo da Interface
+
+![Tela do Sistema](./tela.png)
