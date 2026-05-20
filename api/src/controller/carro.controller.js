@@ -11,7 +11,7 @@ const cadastrar = async (req, res) => {
 
         res.status(201).json(item);
     } catch (e) {
-        res.status(400).json({ error: e.message });
+        rs.status(400).json({ error: e.message });
     }
 };
 

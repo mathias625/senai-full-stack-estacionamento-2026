@@ -4,7 +4,7 @@ Sistema web completo para gerenciamento de pátio, desenvolvido para controlar o
 
 ## Demonstração
 
-| Tela Inicial | Cadastro de Veículos |
+| Tela Inicial | 
 |---|---|
 | ![tela1](./img/hm.png)
 
