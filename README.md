@@ -41,13 +41,13 @@ O ESTACIONAMENTO ACME tem atuado em nossa cidade com ótimo atendimento e segura
 - [CT004] Cadastre, altere e exclua uma estadia.
 - [CT005] Altere pelo menos duas estadias preenchendo a **saida** e verificando se calcula o **valorTotal**.
 
-## Tecnologias
 
 ## Passo a Passo de como executar e testar
+- Clone o repositório
+- cd api
+- npm install
 
-   -Clone o repositório
-   -cd api
-   -npm install
+
 
 ## Tecnologias
 - Git
@@ -68,7 +68,7 @@ O ESTACIONAMENTO ACME tem atuado em nossa cidade com ótimo atendimento e segura
 
 ### Banco de Dados
 - MySQL
-- Prisma ORM
+- Prisma 
 
 ## Exemplo da Interface
 
