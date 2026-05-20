@@ -11,7 +11,7 @@ const cadastrar = async (req, res) => {
         const item = await prisma.alojamento.create({
             data: {
                 placa,
-                valorHor
+                valorHora
             }
         });
 
